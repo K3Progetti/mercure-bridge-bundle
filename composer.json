@@ -1,5 +1,5 @@
 {
-  "name": "k3Progetti/mercure-bridge-bundle",
+  "name": "k3progetti/mercure-bridge-bundle",
   "description": "Symfony bundle per gestire notifiche Mercure personalizzate",
   "type": "symfony-bundle",
   "license": "MIT",
