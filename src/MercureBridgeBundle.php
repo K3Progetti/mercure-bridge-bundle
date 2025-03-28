@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Bundle\MercureBridge;
+namespace K3Progetti\MercureBridgeBundle\MercureBridge;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
