@@ -1,6 +1,6 @@
 <?php
 
-namespace K3Progetti\JwtBundle\DependencyInjection;
+namespace K3Progetti\MercureBridgeBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\Config\FileLocator;
