@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Bundle\MercureBridge\Enum;
+namespace K3Progetti\MercureBridgeBundle\Enum;
 
 enum NotificationType: string
 {
@@ -11,7 +11,4 @@ enum NotificationType: string
     case CommandEvent = 'command_event';
     case ProgressEvent = 'progress_event';
     case StatusUpdate = 'status_update';
-    case FidelityEvent = 'fidelity_event';
-    case OrderEvent = 'order_event';
-    case TransactionEvent = 'transaction_event';
 }

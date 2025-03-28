@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Bundle\MercureBridge\Service;
+namespace K3Progetti\MercureBridgeBundle\Service;
 
 use RuntimeException;
 use Symfony\Component\Mercure\HubInterface;

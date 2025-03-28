@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Bundle\MercureBridge\EventSubscriber;
+namespace K3Progetti\MercureBridgeBundle\EventSubscriber;
 
-use App\Bundle\Jwt\Event\JwtUserLoggedOutEvent;
-use App\Bundle\MercureBridge\Enum\NotificationType;
-use App\Bundle\MercureBridge\Service\NotificationMessageFactory;
-use App\Bundle\MercureBridge\Service\SendNotification;
+use K3Progetti\JwtBundle\Event\JwtUserLoggedOutEvent;
+use K3Progetti\MercureBridgeBundle\Enum\NotificationType;
+use K3Progetti\MercureBridgeBundle\Service\NotificationMessageFactory;
+use K3Progetti\MercureBridgeBundle\Service\SendNotification;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 

@@ -7,7 +7,7 @@ Bundle Symfony per gestire notifiche in tempo reale tramite [Mercure](https://me
 Se usi questo bundle come pacchetto locale:
 
 ```bash
-composer require k3Progetti/mercure-bridge-bundle
+composer require k3progetti/mercure-bridge-bundle
 ```
 
 ## ⚙️ Configurazione

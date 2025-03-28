@@ -1,23 +1,25 @@
 <?php
 
-namespace App\Bundle\MercureBridge\Service;
+namespace K3Progetti\MercureBridgeBundle\Service;
 
-use App\Bundle\MercureBridge\Enum\NotificationType;
+use K3Progetti\MercureBridgeBundle\Enum\NotificationType;
+use DateTime;
 
 class NotificationMessageFactory
 {
     public static function create(
         NotificationType $type,
-        string $operation,
-        array $userData = [],
-        array $meta = []
-    ): array {
+        string           $operation,
+        array            $userData = [],
+        array            $meta = []
+    ): array
+    {
         return [
             'type' => $type->value,
             'operation' => $operation,
             'user' => $userData,
             'meta' => array_merge([
-                'timestamp' => (new \DateTime())->format(DATE_ATOM),
+                'timestamp' => (new DateTime())->format(DATE_ATOM),
             ], $meta),
         ];
     }
