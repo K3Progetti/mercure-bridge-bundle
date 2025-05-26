@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.9](https://github.com/K3Progetti/mercure-bridge-bundle/compare/v1.0.8...v1.0.9) (2025-05-26)
+
+
+### Bug Fixes
+
+* factory create ([74bc1a2](https://github.com/K3Progetti/mercure-bridge-bundle/commit/74bc1a2353db27c28ad5789d11783f2df0f43d63))
+
 ### [1.0.8](https://github.com/K3Progetti/mercure-bridge-bundle/compare/v1.0.7...v1.0.8) (2025-05-26)
 
 
