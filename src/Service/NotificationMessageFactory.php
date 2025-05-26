@@ -2,16 +2,17 @@
 
 namespace K3Progetti\MercureBridgeBundle\Service;
 
+use K3Progetti\MercureBridgeBundle\Enum\NotificationOperation;
 use K3Progetti\MercureBridgeBundle\Enum\NotificationType;
 use DateTime;
 
 class NotificationMessageFactory
 {
     public static function create(
-        NotificationType $type,
-        string           $operation,
-        array            $userData = [],
-        array            $meta = []
+        NotificationType             $type,
+        NotificationOperation|string $operation,
+        array                        $userData = [],
+        array                        $meta = []
     ): array
     {
         return [
