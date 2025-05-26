@@ -3,6 +3,7 @@
 namespace K3Progetti\MercureBridgeBundle\Service;
 
 use RuntimeException;
+use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use Symfony\Component\Mercure\HubInterface;
 use Symfony\Component\Mercure\Update;
 
@@ -11,18 +12,17 @@ use Symfony\Component\Mercure\Update;
  *
  * @author Mattia Vitali <mattia.vitali@gmail.com>
  */
-class SendNotification
+readonly class SendNotification
 {
 
-    private HubInterface $hub;
-    private string $defaultTopic;
 
-    public function __construct(HubInterface $hub, ?string $defaultTopic = 'crmLorini')
+    public function __construct(
+        private HubInterface          $hub,
+        private ParameterBagInterface $parameterBag,
+    )
     {
-        $this->hub = $hub;
-        $this->defaultTopic = $defaultTopic;
-    }
 
+    }
 
     /**
      * @param array $data
@@ -34,8 +34,14 @@ class SendNotification
     {
 
         try {
+
+            $mercureTopic = $this->parameterBag->get('mercureTopic');
+            if (empty($mercureTopic) && $topic === null) {
+                throw new RuntimeException('Mercure topic not configured');
+            }
+
             $update = new Update(
-                $topic ?? $this->defaultTopic,
+                $topic ?? $mercureTopic,
                 json_encode($data),
                 $isPrivate
             );
