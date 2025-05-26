@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.7](https://github.com/K3Progetti/mercure-bridge-bundle/compare/v1.0.6...v1.0.7) (2025-05-26)
+
+
+### Features
+
+* add Gitignore.php ([d1bee52](https://github.com/K3Progetti/mercure-bridge-bundle/commit/d1bee52ca4cdfd3b7a8741debe099ddeac7d5457))
+
+
+### Bug Fixes
+
+* rotta avere il token di mercure e recupero del topic dall'env ([498eed4](https://github.com/K3Progetti/mercure-bridge-bundle/commit/498eed4bb8c18d7ac79c786abb4fb2eccb77e359))
+
 ### [1.0.6](https://github.com/K3Progetti/mercure-bridge-bundle/compare/v1.0.5...v1.0.6) (2025-03-28)
 
 
