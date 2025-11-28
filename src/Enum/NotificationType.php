@@ -11,4 +11,5 @@ enum NotificationType: string
     case CommandEvent = 'command_event';
     case ProgressEvent = 'progress_event';
     case StatusUpdate = 'status_update';
+    case ErrorEvent = 'error_event';
 }

@@ -9,6 +9,8 @@ enum NotificationOperation: string
     case DownloadCompleted = 'download_completed';
     case DownloadFailed = 'download_failed';
     case DownloadProgress = 'download_progress';
+    case ErrorOccurred = 'error_occurred';
+    case Refresh = 'refresh';
 
     // Potresti anche usare metodi helper
     public function description(): string
@@ -19,6 +21,8 @@ enum NotificationOperation: string
             self::DownloadCompleted => 'Comando completato con successo',
             self::DownloadFailed => 'Comando fallito',
             self::DownloadProgress => 'Download in elaborazione',
+            self::ErrorOccurred => 'Si è verificato un errore',
+            self::Refresh => 'Refresh',
         };
     }
 }
