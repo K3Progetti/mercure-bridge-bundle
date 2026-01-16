@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/K3Progetti/mercure-bridge-bundle/compare/v1.0.11...v2.0.0) (2026-01-16)
+
+
+### Features
+
+* aggiornamento symfony 8.0 ([e9ef696](https://github.com/K3Progetti/mercure-bridge-bundle/commit/e9ef6967159f2a76a9088af41e38f1c3368b2560))
+
 ### [1.0.11](https://github.com/K3Progetti/mercure-bridge-bundle/compare/v1.0.10...v1.0.11) (2025-11-28)
 
 
